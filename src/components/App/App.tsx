@@ -4,16 +4,16 @@ import {GeneratorView} from "../Views/GeneratorView";
 import {QuestionsView} from "../Views/QuestionsView";
 
 import './App.css';
+import {AllQuestions} from "../AllQuestions/AllQuestions";
+import {MainView} from "../Views/MainView";
 
 
 
 export const App = () => {
   return <div className='App'>
-      <h1>Genertor magisterki</h1>
 
-    <Link to="/generator">Generuj test</Link>
-    <Link to="/questions">Pytania</Link>
     <Routes>
+      <Route path="/" element={<MainView/>}/>
       <Route path="/generator" element={<GeneratorView/>}/>
       <Route path="/questions" element={<QuestionsView/>}/>
 

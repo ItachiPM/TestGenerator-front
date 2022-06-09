@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import './QuestionsView.css'
+
 export const QuestionsView = () => {
-    return <>
-        <h1>Pytania</h1>
-        <Link to="/questions/all">Wszystkie</Link>
-        <Link to="/questions/module">Przedmioty</Link>
-        <Link to="/questions/add">Dodaj</Link>
-    </>
+    return <div className="QuestionsView">
+        <h1>Genertor magisterki</h1>
+        <h2>Pytania</h2>
+        <Link className="Link" to="/questions/all">Wszystkie</Link>
+        <Link className="Link" to="/questions/module">Przedmioty</Link>
+        <Link className="Link" to="/questions/add">Dodaj Pytanie</Link>
+    </div>
 }
