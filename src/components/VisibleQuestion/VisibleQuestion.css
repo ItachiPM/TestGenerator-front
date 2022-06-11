@@ -1,0 +1,30 @@
+.VisibleQuestion {
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.VisibleQuestion .question {
+    font-size: 2vmin;
+    margin-bottom: 0;
+}
+
+.VisibleQuestion .answer {
+    margin-top: 0;
+    font-size: 3.5vmin;
+    font-weight: bold;
+}
+
+.VisibleQuestion .module {
+    font-size: 2vmin;
+}
+
+.VisibleQuestion {
+    padding-bottom: 20px;
+}
+
+
