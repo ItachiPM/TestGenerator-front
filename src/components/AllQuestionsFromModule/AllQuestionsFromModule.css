@@ -1,29 +1,23 @@
-.AllQuestions {
+.AllQuestionsFromModule {
     display: grid;
     grid-template-columns: 20% auto 20%;
     grid-template-rows: 15vh 85vh;
 }
 
-.AllQuestions--title {
+.AllQuestionsFromModule--title {
     grid-column: 2;
     grid-row: 1;
     text-align: center;
     font-size: 3vmin;
 }
 
-.AllQuestions--back-button {
+.AllQuestionsFromModule--menu {
+    display: block;
     grid-column: 1;
     grid-row: 2;
 }
 
-.AllQuestions--back-button .Link {
-    width: 30%;
-    margin-right: 10px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.AllQuestions--container {
+.AllQuestionsFromModule--container {
     grid-column: 2;
     grid-row: 2;
     place-items: center;

@@ -1,15 +1,16 @@
 .VisibleQuestion {
     width: 80%;
-    height: 100%;
+    height: 15%;
     border: 1px solid black;
     text-align: center;
     justify-content: center;
-    margin: 20px auto;
+    margin: 15px auto;
     border-radius: 15px;
+    padding-bottom: 5px;
 }
 
 .VisibleQuestion .question {
-    font-size: 2vmin;
+    font-size: 3vmin;
     margin-bottom: 0;
 }
 
@@ -20,11 +21,11 @@
 }
 
 .VisibleQuestion .module {
-    font-size: 2vmin;
+    font-size: 1.8vmin;
 }
 
-.VisibleQuestion {
-    padding-bottom: 20px;
+.VisibleQuestion p {
+    margin: 10px;
 }
 
 
