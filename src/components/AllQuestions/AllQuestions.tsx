@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {BackButton} from "../BackButton/BackButton";
+import {BackButton} from "../utils/BackButton/BackButton";
 import {VisibleQuestion} from "../VisibleQuestion/VisibleQuestion";
 import {ListQuestionEntity} from "types"
 

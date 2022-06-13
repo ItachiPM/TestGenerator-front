@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {BackButton} from "../BackButton/BackButton";
+import {BackButton} from "../utils/BackButton/BackButton";
 import {VisibleQuestion} from "../VisibleQuestion/VisibleQuestion";
-import {ModuleButton} from "../ModuleButton/ModuleButton";
+import {ModuleButton} from "../utils/ModuleButton/ModuleButton";
 import {ListQuestionEntity , Module} from "types"
 
 import './AllQuestionsFromModule.css'
