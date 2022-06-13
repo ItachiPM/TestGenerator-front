@@ -1,13 +1,13 @@
 import React from "react";
 
-import './ModuleButton.css'
+import './SingleModuleButton.css'
 
 interface Props {
     module: string;
-    onHandle: (e: string) => void;
+    onHandle: (module: string) => void;
 }
 
-export const ModuleButton = (props: Props) => {
+export const SingleModuleButton = (props: Props) => {
     const {module, onHandle} = props;
 
     return <button
