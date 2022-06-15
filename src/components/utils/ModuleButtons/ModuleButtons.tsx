@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect} from "react";
 import {SingleModuleButton} from "./SingleModuleButton";
-import {Module} from "types";
+import {ModuleContext} from "../context/module.context";
+import {fetchFunction} from "../fetchFunction";
 
 interface Props {
     handleModuleButton: (module: string) => void;
@@ -8,22 +9,18 @@ interface Props {
 
 export const ModuleButtons = (props: Props) => {
 
+    const {moduleList, setModuleList} = useContext(ModuleContext)
     const {handleModuleButton} = props
 
-    const [modules, setModules] = useState<Module[]>([]);
 
     useEffect(() => {
         (async () => {
-            const res = await fetch(`http://localhost:3001/modules`);
-            const date = await res.json();
-            handleModuleButton(date[0].module)
-            setModules(date)
-
-        })();
-    }, [])
-
+            const data = await fetchFunction(`modules`);
+            setModuleList(data)
+        })()
+    }, []);
 
     return <>
-        {modules.map(module => <SingleModuleButton key={module.id} onHandle={handleModuleButton} module={module.module}/>)}
+        {moduleList.map(m => <SingleModuleButton key={m.id} onHandle={handleModuleButton} module={m.module}/>)}
     </>
 }

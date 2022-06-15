@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {BackButton} from "../utils/BackButton/BackButton";
 import {VisibleQuestion} from "../VisibleQuestion/VisibleQuestion";
+import {Loader} from "../../Loader/Loader";
+import {fetchFunction} from "../utils/fetchFunction";
 import {ListQuestionEntity} from "types"
 
 import './AllQuestions.css'
-import {Loader} from "../../Loader/Loader";
 
 export const AllQuestions = () => {
 
@@ -14,9 +15,8 @@ export const AllQuestions = () => {
     useEffect(() => {
         (async () => {
             setLoad(true)
-            const res = await fetch('http://localhost:3001/questions');
-            const date = await res.json();
-            setQuestions(date)
+            const data = await fetchFunction('questions')
+            setQuestions(data)
             setLoad(false)
         })();
     }, [])

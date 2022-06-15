@@ -5,8 +5,8 @@ import {Title} from "../utils/Title/Title";
 
 import './QuestionsView.css'
 
-export const QuestionsView = () => {
-    return <div className="QuestionsView">
+export const QuestionsView = () => (
+    <div className="QuestionsView">
         <Title/>
         <h2>Pytania</h2>
         <Link className="Link" to="/questions/all">Wszystkie</Link>
@@ -14,4 +14,4 @@ export const QuestionsView = () => {
         <Link className="Link" to="/questions/add">Dodaj Pytanie</Link>
         <BackButton/>
     </div>
-}
+)

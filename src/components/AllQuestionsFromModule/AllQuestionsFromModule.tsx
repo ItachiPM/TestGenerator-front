@@ -1,24 +1,29 @@
 import React, {useEffect, useState} from "react";
-import {BackButton} from "../utils/BackButton/BackButton";
 import {VisibleQuestion} from "../VisibleQuestion/VisibleQuestion";
-import {ListQuestionEntity} from "types";
 import {Loader} from "../../Loader/Loader";
+import {ModuleButtons} from "../utils/ModuleButtons/ModuleButtons";
+import {BackButton} from "../utils/BackButton/BackButton";
+import {fetchFunction} from "../utils/fetchFunction";
+import {ListQuestionEntity} from "types";
 
 import './AllQuestionsFromModule.css'
-import {ModuleButtons} from "../utils/ModuleButtons/ModuleButtons";
 
 export const AllQuestionsFromModule = () => {
 
     const [questions, setQuestions] = useState<ListQuestionEntity[]>([]);
-    const [module, setModule] = useState<string>('');
+    const [module, setModule] = useState<string | null>(null);
     const [load, setLoad] = useState<boolean>(false);
+
 
     useEffect(() => {
         (async () => {
             setLoad(true)
-            const res = await fetch(`http://localhost:3001/questions/${module}`);
-            const date = await res.json();
-            setQuestions(date)
+            if(module === null) {
+                const data = await fetchFunction(`modules`)
+                setModule(data[0].module)
+            }
+            const data = await fetchFunction(`questions/${module}`)
+            setQuestions(data)
             setLoad(false)
         })();
     }, [module])
@@ -28,7 +33,7 @@ export const AllQuestionsFromModule = () => {
     }
 
     return <div className="AllQuestionsFromModule">
-        <div className="AllQuestionsFromModule--title"><h1>Wszystkie Pytania</h1></div>
+        <div className="AllQuestionsFromModule--title"><h1>Pytania</h1></div>
         <div className="AllQuestionsFromModule--menu">
             <ModuleButtons handleModuleButton={handleModuleButton}/>
             <BackButton/>

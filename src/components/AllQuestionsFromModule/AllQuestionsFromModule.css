@@ -17,6 +17,10 @@
     grid-row: 2;
 }
 
+.AllQuestionsFromModule--menu .Link {
+    width: 50%;
+}
+
 .AllQuestionsFromModule--container {
     grid-column: 2;
     grid-row: 2;

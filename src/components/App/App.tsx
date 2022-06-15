@@ -1,27 +1,41 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Route, Routes} from "react-router-dom";
 import {GeneratorView} from "../Views/GeneratorView";
 import {QuestionsView} from "../Views/QuestionsView";
-
-import './App.css';
 import {AllQuestions} from "../AllQuestions/AllQuestions";
 import {MainView} from "../Views/MainView";
 import {AllQuestionsFromModule} from "../AllQuestionsFromModule/AllQuestionsFromModule";
+import {AddQuestion} from "../AddQuestion/AddQuestion";
 
+import './App.css';
+import {Module} from 'types';
+import { ModuleContext } from '../utils/context/module.context';
+import {fetchFunction} from "../utils/fetchFunction";
 
 
 export const App = () => {
-  return <div className='App'>
 
-    <Routes>
-      <Route path="/" element={<MainView/>}/>
-      <Route path="/generator" element={<GeneratorView/>}/>
-      <Route path="/questions" element={<QuestionsView/>}/>
+    const [moduleList, setModuleList] = useState<Module[]>([])
 
-      <Route path="/questions/module" element={<AllQuestionsFromModule/>}/>
-      <Route path="/questions/all" element={<AllQuestions/>}/>
-      <Route path="/questions/add" element={<QuestionsView/>}/>
+    useEffect(() => {
+        (async () => {
+            const data = await fetchFunction(`modules`);
+            setModuleList(data)
+        })()
+    }, []);
 
-    </Routes>
-  </div>
+    return <ModuleContext.Provider value={{moduleList, setModuleList}}>
+        <div className='App'>
+
+            <Routes>
+                <Route path="/" element={<MainView/>}/>
+                <Route path="/generator" element={<GeneratorView/>}/>
+                <Route path="/questions" element={<QuestionsView/>}/>
+
+                <Route path="/questions/module" element={<AllQuestionsFromModule/>}/>
+                <Route path="/questions/all" element={<AllQuestions/>}/>
+                <Route path="/questions/add" element={<AddQuestion/>}/>
+            </Routes>
+        </div>
+    </ModuleContext.Provider>
 }
