@@ -17,7 +17,7 @@ export const ModuleButtons = (props: Props) => {
         (async () => {
             const data = await fetchFunction(`modules`);
             setModuleList(data)
-        })()
+        })();
     }, []);
 
     return <>

@@ -6,11 +6,11 @@ import {AllQuestions} from "../AllQuestions/AllQuestions";
 import {MainView} from "../Views/MainView";
 import {AllQuestionsFromModule} from "../AllQuestionsFromModule/AllQuestionsFromModule";
 import {AddQuestion} from "../AddQuestion/AddQuestion";
+import {fetchFunction} from "../utils/fetchFunction";
+import { ModuleContext } from '../utils/context/module.context';
+import {Module} from 'types';
 
 import './App.css';
-import {Module} from 'types';
-import { ModuleContext } from '../utils/context/module.context';
-import {fetchFunction} from "../utils/fetchFunction";
 
 
 export const App = () => {

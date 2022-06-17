@@ -11,19 +11,26 @@ import './AllQuestionsFromModule.css'
 export const AllQuestionsFromModule = () => {
 
     const [questions, setQuestions] = useState<ListQuestionEntity[]>([]);
-    const [module, setModule] = useState<string | null>(null);
+    const [module, setModule] = useState<string | null>('');
+    const [wait, setWait] = useState<boolean>(true)
     const [load, setLoad] = useState<boolean>(false);
 
 
     useEffect(() => {
         (async () => {
+            const data = await fetchFunction(`modules`)
+            setModule(data[0].module)
+            setWait(false)
+        })();
+    }, [])
+
+    useEffect(() => {
+        (async () => {
             setLoad(true)
-            if(module === null) {
-                const data = await fetchFunction(`modules`)
-                setModule(data[0].module)
+            if(!wait) {
+                const data = await fetchFunction(`questions/${module}`)
+                setQuestions(data)
             }
-            const data = await fetchFunction(`questions/${module}`)
-            setQuestions(data)
             setLoad(false)
         })();
     }, [module])
