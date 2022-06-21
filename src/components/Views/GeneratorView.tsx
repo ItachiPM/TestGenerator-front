@@ -10,8 +10,8 @@ export const GeneratorView = () => {
     return <div className="GeneratorView">
         <Title/>
         <h2>Rozwiąż Test</h2>
-        <Link className="Link" to="/questions/all">Całościowy</Link>
-        <Link className="Link" to="/questions/module">Pojedyńczy przedmiot</Link>
+        <Link className="Link" to="/generator/general">Całościowy</Link>
+        <Link className="Link" to="/generator/module">Pojedyńczy przedmiot</Link>
         <BackButton/>
     </div>
 }
