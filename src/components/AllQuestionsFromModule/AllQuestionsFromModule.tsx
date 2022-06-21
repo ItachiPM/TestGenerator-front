@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {VisibleQuestion} from "../VisibleQuestion/VisibleQuestion";
-import {Loader} from "../../Loader/Loader";
+import {Loader} from "../Loader/Loader";
 import {ModuleButtons} from "../utils/ModuleButtons/ModuleButtons";
 import {BackButton} from "../utils/BackButton/BackButton";
 import {fetchFunction} from "../utils/fetchFunction";
@@ -28,8 +28,7 @@ export const AllQuestionsFromModule = () => {
         (async () => {
             setLoad(true)
             if(!wait) {
-                const data = await fetchFunction(`questions/${module}`)
-                setQuestions(data)
+                setQuestions(await fetchFunction(`questions/${module}`))
             }
             setLoad(false)
         })();

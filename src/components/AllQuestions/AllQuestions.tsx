@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {BackButton} from "../utils/BackButton/BackButton";
 import {VisibleQuestion} from "../VisibleQuestion/VisibleQuestion";
-import {Loader} from "../../Loader/Loader";
+import {Loader} from "../Loader/Loader";
 import {fetchFunction} from "../utils/fetchFunction";
 import {ListQuestionEntity} from "types"
 
