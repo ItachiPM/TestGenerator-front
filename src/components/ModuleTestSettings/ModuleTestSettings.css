@@ -1,0 +1,54 @@
+.ModuleTestSettings {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.ModuleTestSettings h1 {
+    font-size: 10vmin;
+}
+
+.ModuleTestSettings .options {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 3vmin;
+    width: 50%;
+    margin: auto;
+}
+
+.ModuleTestSettings input {
+    font-size: 2vmin;
+    text-align: center;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.ModuleTestSettings select {
+    text-align: center;
+    font-size: 2vmin;
+}
+
+.ModuleTestSettings .button {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    width: 50%;
+    font-size: 2vmin;
+    margin:  0 auto 25px auto;
+}
+
+.ModuleTestSettings .button:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.ModuleTestSettings p {
+    margin-bottom: 0;
+}

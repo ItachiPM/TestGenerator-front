@@ -14,6 +14,7 @@ import {Module} from 'types';
 import './App.css';
 import {ModuleTestSettings} from "../ModuleTestSettings/ModuleTestSettings";
 import {NotFoundView} from "../Views/NotFoundView";
+import {ModuleTest} from "../ModuleTest/ModuleTest";
 
 
 
@@ -36,7 +37,7 @@ export const App = () => {
                 <Route path="/generator" element={<GeneratorView/>}/>
                 <Route path="/generator/general" element={<GeneralTest/>}/>
                 <Route path="/generator/module" element={<ModuleTestSettings/>}/>
-                <Route path="/generator/module/:" element={<ModuleTestSettings/>}/>
+                <Route path="/generator/module/:moduleName/:questionCount" element={<ModuleTest/>}/>
 
 
                 <Route path="/questions" element={<QuestionsView/>}/>
