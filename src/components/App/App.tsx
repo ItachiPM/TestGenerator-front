@@ -12,6 +12,8 @@ import { ModuleContext } from '../utils/context/module.context';
 import {Module} from 'types';
 
 import './App.css';
+import {ModuleTestSettings} from "../ModuleTestSettings/ModuleTestSettings";
+import {NotFoundView} from "../Views/NotFoundView";
 
 
 
@@ -33,13 +35,16 @@ export const App = () => {
                 <Route path="/" element={<MainView/>}/>
                 <Route path="/generator" element={<GeneratorView/>}/>
                 <Route path="/generator/general" element={<GeneralTest/>}/>
-                <Route path="/generator/module" element={<GeneralTest/>}/>
+                <Route path="/generator/module" element={<ModuleTestSettings/>}/>
+                <Route path="/generator/module/:" element={<ModuleTestSettings/>}/>
 
 
                 <Route path="/questions" element={<QuestionsView/>}/>
                 <Route path="/questions/module" element={<AllQuestionsFromModule/>}/>
                 <Route path="/questions/all" element={<AllQuestions/>}/>
                 <Route path="/questions/add" element={<AddQuestion/>}/>
+
+                <Route path="*" element={<NotFoundView/>} />
             </Routes>
         </div>
     </ModuleContext.Provider>
