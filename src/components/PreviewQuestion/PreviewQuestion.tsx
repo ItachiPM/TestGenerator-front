@@ -1,16 +1,16 @@
 import React from "react";
 import { ListQuestionEntity } from "types";
 
-import './VisibleQuestion.css';
+import './PreviewQuestion.css';
 
 interface Props {
     questionEntity: ListQuestionEntity
 }
 
-export const VisibleQuestion = (props: Props) => {
+export const PreviewQuestion = (props: Props) => {
     const question = props.questionEntity
 
-    return <div className="VisibleQuestion">
+    return <div className="PreviewQuestion">
         <div className="module">
             <p>
                 {question.module}

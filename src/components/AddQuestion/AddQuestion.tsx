@@ -73,7 +73,8 @@ export const AddQuestion = () => {
                 setAddNewModule(data.isNewModule)
                 clearForm()
             }
-        } finally {
+        } catch (e) {
+            console.log(e)
         }
     }
 

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {BackButton} from "../utils/BackButton/BackButton";
-import {VisibleQuestion} from "../VisibleQuestion/VisibleQuestion";
+import {PreviewQuestion} from "../PreviewQuestion/PreviewQuestion";
 import {Loader} from "../Loader/Loader";
 import {fetchFunction} from "../utils/fetchFunction";
 import {ListQuestionEntity} from "types"
@@ -25,7 +25,7 @@ export const AllQuestions = () => {
         <div className="AllQuestions--back-button"><BackButton/></div>
         <div className="AllQuestions--title"><h1>Wszystkie Pytania</h1></div>
         <div className="AllQuestions--container">
-            {load ? <Loader/> : questions.map(question => <VisibleQuestion key={question.id} questionEntity={question}/>)}
+            {load ? <Loader/> : questions.map(question => <PreviewQuestion key={question.id} questionEntity={question}/>)}
         </div>
     </div>;
 }

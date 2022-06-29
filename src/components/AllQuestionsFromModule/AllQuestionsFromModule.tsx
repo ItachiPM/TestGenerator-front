@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {VisibleQuestion} from "../VisibleQuestion/VisibleQuestion";
+import {PreviewQuestion} from "../PreviewQuestion/PreviewQuestion";
 import {Loader} from "../Loader/Loader";
 import {ModuleButtons} from "../utils/ModuleButtons/ModuleButtons";
 import {BackButton} from "../utils/BackButton/BackButton";
@@ -45,7 +45,7 @@ export const AllQuestionsFromModule = () => {
             <BackButton/>
         </div>
         <div className="AllQuestionsFromModule--container">
-            {load ? <Loader/> : questions === null ? null : questions.map(question => <VisibleQuestion key={question.id} questionEntity={question}/>)}
+            {load ? <Loader/> : questions === null ? null : questions.map(question => <PreviewQuestion key={question.id} questionEntity={question}/>)}
         </div>
     </div>;
 }
