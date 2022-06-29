@@ -37,7 +37,6 @@ export const LoginView = () => {
                     body: JSON.stringify(user)
                 })
                 const data = await res.json()
-                console.log(data)
                 if(!data.isSuccess) {
                     setError(data.mess)
                 } else {

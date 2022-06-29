@@ -7,7 +7,6 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     const navigate = useNavigate()
 
     const [cookies] = useCookies(['session_id'])
-    console.log(cookies.session_id)
 
     const handleLogin = () => {
         navigate('/')
