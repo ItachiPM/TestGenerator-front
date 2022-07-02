@@ -1,0 +1,84 @@
+.RegisterView {
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.RegisterView form {
+    margin: 5% auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.RegisterView p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.RegisterView input {
+    width: 40%;
+    font-size: 2vmin;
+}
+
+.RegisterView button {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    width: 25%;
+    padding: 1%;
+    font-size: 2vmin;
+    margin:  10px auto 20px auto;
+}
+
+.RegisterView button:hover {
+    cursor: pointer;
+}
+
+.RegisterView .error {
+    margin: 10px auto 0 auto;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: #D8000C;
+    background-color: #FFBABA;
+    text-align: center;
+    align-items: center;
+}
+
+.RegisterView .CorrectRegister {
+    margin: 5% auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.RegisterView .CorrectRegister .Link {
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    display: block;
+    width: 30%;
+    padding: 1%;
+    font-size: 3vmin;
+    margin:  20px auto 20px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.RegisterView .errorInput {
+    margin: 10px auto 0 auto;
+    width: 40%;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: #D8000C;
+    background-color: #FFBABA;
+    align-items: center;
+}

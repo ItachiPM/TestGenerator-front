@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {Title} from "../utils/Title/Title";
+import {Title} from "../../utils/Title/Title";
 
 import './MainView.css';
 

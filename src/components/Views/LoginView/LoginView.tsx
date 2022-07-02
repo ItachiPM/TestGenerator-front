@@ -1,9 +1,11 @@
 import React, {FormEvent, useContext, useState} from "react";
-import {Title} from "../utils/Title/Title";
-import {LoginContext} from "../utils/context/login.contex";
+import {Link} from "react-router-dom";
+import {Title} from "../../utils/Title/Title";
+import {LoginContext} from "../../utils/context/login.contex";
 import { User } from "types";
 
 import './LoginView.css'
+
 
 export const LoginView = () => {
 
@@ -72,5 +74,6 @@ export const LoginView = () => {
                 <button type='submit'>Zaloguj</button>
             </p>
         </form>
+        <Link className="Link" to='register'>Zarejestruj się!</Link>
     </div>
 }

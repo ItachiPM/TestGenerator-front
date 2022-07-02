@@ -1,5 +1,5 @@
 import React from "react";
-import {BackButton} from "../utils/BackButton/BackButton";
+import {BackButton} from "../../utils/BackButton/BackButton";
 
 import './NotFoundView.css'
 

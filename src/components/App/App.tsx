@@ -1,17 +1,18 @@
 import React, { useEffect, useState} from 'react';
 import {Route, Routes} from "react-router-dom";
-import {GeneratorView} from "../Views/GeneratorView";
-import {QuestionsView} from "../Views/QuestionsView";
+import {GeneratorView} from "../Views/GeneratorView/GeneratorView";
+import {RegisterView} from "../Views/RegisterView/RegisterView";
+import {QuestionsView} from "../Views/QuestionsView/QuestionsView";
 import {AllQuestions} from "../AllQuestions/AllQuestions";
-import {MainView} from "../Views/MainView";
+import {MainView} from "../Views/MainView/MainView";
 import {GeneralTest} from "../GeneralTest/GeneralTest";
 import {AllQuestionsFromModule} from "../AllQuestionsFromModule/AllQuestionsFromModule";
 import {AddQuestion} from "../AddQuestion/AddQuestion";
 import {fetchFunction} from "../utils/fetchFunction";
 import {ModuleTestSettings} from "../ModuleTestSettings/ModuleTestSettings";
-import {NotFoundView} from "../Views/NotFoundView";
+import {NotFoundView} from "../Views/NotFoundView/NotFoundView";
 import {ModuleTest} from "../ModuleTest/ModuleTest";
-import {LoginView} from "../Views/LoginView";
+import {LoginView} from "../Views/LoginView/LoginView";
 import {AuthProvider} from "../utils/login/AuthProvider";
 import {ProtectedRoute} from "../utils/login/ProtectedRoute";
 import {ModuleContext} from '../utils/context/module.context';
@@ -37,6 +38,7 @@ export const App = () => {
 
                 <Routes>
                     <Route path="login" element={<LoginView/>}/>
+                    <Route path="login/register" element={<RegisterView/>}/>
 
                     <Route path="/" element={<ProtectedRoute><MainView/></ProtectedRoute>}/>
 

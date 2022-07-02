@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {BackButton} from "../utils/BackButton/BackButton";
-import {Title} from "../utils/Title/Title";
+import {BackButton} from "../../utils/BackButton/BackButton";
+import {Title} from "../../utils/Title/Title";
 
 import './GeneratorView.css';
 
