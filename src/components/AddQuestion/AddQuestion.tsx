@@ -127,7 +127,7 @@ export const AddQuestion = () => {
             </div>
             <div className="section">
                 <p>Błędne pytania do generowania Testu</p>
-                <small>Opcjonalnie</small>
+                <small>(jeśli nie podasz chociaż jednego to pytanie nie będzie użyte w generowaniu testu)</small>
 
                 <label>
                     <p>Zła odpowieź <small>(opcjonalnie)</small>:</p>
