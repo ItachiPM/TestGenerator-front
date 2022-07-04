@@ -1,0 +1,29 @@
+.AllQuestionsFromModule {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 15vh 85vh;
+}
+
+.AllQuestionsFromModule--title {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.AllQuestionsFromModule--menu {
+    display: block;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.AllQuestionsFromModule--menu .Link {
+    width: 50%;
+}
+
+.AllQuestionsFromModule--container {
+    grid-column: 2;
+    grid-row: 2;
+    place-items: center;
+    overflow: auto;
+}

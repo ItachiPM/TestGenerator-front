@@ -1,0 +1,104 @@
+.AddQuestion {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.AddQuestion .Title {
+    margin-bottom: 10px;
+}
+
+.AddQuestion h2 {
+    margin-top: 10px;
+    font-size: 7vmin;
+    margin-bottom: 20px;
+}
+
+.AddQuestion p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.AddQuestion option {
+    text-align: center;
+}
+
+
+.AddQuestion input {
+    text-align: center;
+    width: 50%;
+    height: 25px;
+}
+
+.section {
+    margin-bottom: 4%;
+}
+
+.back--button {
+    margin: 20px auto 0 auto;
+    width: 30%;
+}
+
+.AddQuestion .module--button {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    width: 32%;
+    font-size: 1.3vmin;
+    margin: auto;
+}
+
+.add-button {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    width: 32%;
+    font-size: 3vmin;
+    margin: auto;
+}
+
+.add-button:hover {
+    cursor: pointer;
+}
+
+.AddQuestion form {
+    margin: auto;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-box-shadow: -2px 18px 20px -8px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -2px 18px 20px -8px rgba(66, 68, 90, 1);
+    box-shadow: -2px 18px 20px -8px rgba(66, 68, 90, 1);
+}
+
+.AddQuestion .error {
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: #D8000C;
+    background-color: #FFBABA;
+    text-align: center;
+    align-items: center;
+}
+
+.correct-add-question {
+    width: 30%;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 0 auto 10px auto;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    padding: 5px;
+}

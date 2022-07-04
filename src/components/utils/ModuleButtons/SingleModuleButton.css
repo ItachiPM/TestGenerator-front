@@ -1,0 +1,18 @@
+.ModuleButton {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    width: 80%;
+    padding: 1%;
+    font-size: 3vmin;
+    margin:  10px auto 0 auto;
+}
+
+.ModuleButton button {
+    border: none;
+}

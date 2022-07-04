@@ -1,0 +1,33 @@
+.TestForm {
+    width: 45%;
+    margin: auto;
+}
+
+.TestForm .header {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(104, 58, 183, 0.8);
+    font-size: 2vmin;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.TestForm .end--test {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    width: 80%;
+    padding: 1%;
+    font-size: 3vmin;
+    margin:  10px auto 20px auto;
+}
+
+.TestForm .end--test:hover {
+    cursor: pointer;
+    background-color: rgba(104, 58, 183, 0.8);
+}

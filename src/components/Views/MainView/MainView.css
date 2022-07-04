@@ -1,0 +1,16 @@
+.MainView {
+    text-align: center;
+}
+
+.Link {
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    display: block;
+    width: 30%;
+    padding: 1%;
+    font-size: 3vmin;
+    margin:  10px auto 0 auto;
+    border-radius: 5px;
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+.LoginView {
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.LoginView form {
+    margin: 5% auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.LoginView p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.LoginView input {
+    width: 40%;
+    font-size: 2vmin;
+}
+
+.LoginView button {
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    width: 25%;
+    padding: 1%;
+    font-size: 2vmin;
+    margin:  10px auto 20px auto;
+}
+
+.LoginView button:hover {
+    cursor: pointer;
+}
+
+.LoginView .error {
+    margin: 10px auto 0 auto;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: #D8000C;
+    background-color: #FFBABA;
+    text-align: center;
+    align-items: center;
+}
+
+.LoginView .Link {
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    display: block;
+    width: 15%;
+    padding: 1%;
+    font-size: 2.5vmin;
+    margin:  10px auto 0 auto;
+    border-radius: 5px;
+    text-align: center;
+}
