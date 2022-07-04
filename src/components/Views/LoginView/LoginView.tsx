@@ -5,6 +5,7 @@ import {LoginContext} from "../../utils/context/login.contex";
 import { User } from "types";
 
 import './LoginView.css'
+import {apiUrl} from "../../../config/api";
 
 
 export const LoginView = () => {
@@ -30,7 +31,7 @@ export const LoginView = () => {
 
         if(user.login.length !== 0 && user.pwdHash.length !== 0) {
             try {
-                const res = await fetch('http://localhost:3001/login', {
+                const res = await fetch(`${apiUrl}/login`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

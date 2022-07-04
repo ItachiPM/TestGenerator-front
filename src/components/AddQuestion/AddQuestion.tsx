@@ -6,6 +6,7 @@ import {fetchFunction} from "../utils/fetchFunction";
 import {Question} from "types";
 
 import './AddQuestion.css'
+import {apiUrl} from "../../config/api";
 
 interface ResponseValue {
     success: string | null;
@@ -51,7 +52,8 @@ export const AddQuestion = () => {
         e.preventDefault()
 
         try {
-            const res = await fetch('http://localhost:3001/questions/add', {
+            const res = await fetch(`${apiUrl
+            }/questions/add`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

@@ -1,4 +1,5 @@
 import React, {FormEvent, useState} from "react";
+import {apiUrl} from "../../../config/api";
 
 interface Props {
     onHandleRegister: () => void;
@@ -26,7 +27,7 @@ export const RegisterForm = (props: Props) => {
         }
 
         try {
-            const res = await fetch('http://localhost:3001/login/register', {
+            const res = await fetch(`${apiUrl}/login/register`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
