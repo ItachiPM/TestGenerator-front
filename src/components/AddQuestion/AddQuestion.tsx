@@ -74,6 +74,14 @@ export const AddQuestion = () => {
                 })
                 setAddNewModule(data.isNewModule)
                 clearForm()
+                setNewQuestion({
+                    module: '',
+                    question: '',
+                    correctAnswer: '',
+                    badAnswer1: null,
+                    badAnswer2: null,
+                    badAnswer3: null,
+                })
             }
         } catch (e) {
             console.log(e)
