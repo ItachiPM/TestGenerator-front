@@ -20,8 +20,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 first to open the whole app you must to register new user and login.
 
+On path /admin you can see a panel admin where you can delete user or update and delete some question. I intentionally did not create logic to lock the admin panel for selected persons because I want to show how it looks and works.
+
 ## Usage
-This api is collaborate with TestGenerator-backend API Link here:
+This api is collaborated with TestGenerator-backend API Link here:
 https://github.com/ItachiPM/TestGenerator-back
 
 # Getting Started with Create React App
