@@ -28,7 +28,7 @@ export const AllQuestionsFromModule = () => {
         (async () => {
             setLoad(true)
             if(!wait) {
-                setQuestions(await fetchFunction(`questions/${module}`))
+                setQuestions(await fetchFunction(`questions/module/${module}`))
             }
             setLoad(false)
         })();

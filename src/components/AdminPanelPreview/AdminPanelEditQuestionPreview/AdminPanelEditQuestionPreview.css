@@ -1,0 +1,51 @@
+.edit--question--panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 60%;
+    padding: 1%;
+    margin: 3% auto;
+    font-size: 2vmin;
+    background-color: #efefef;
+}
+
+.edit--question--panel button {
+    background-color: #efefef;
+}
+
+.edit--question--panel form textarea {
+    width: 60%;
+    max-width: 50vw;
+}
+
+.edit--question--panel .section {
+    text-align: center;
+}
+
+.AdminPanelLink {
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    display: block;
+    width: 10%;
+    padding: 1%;
+    font-size: 2vmin;
+    margin:  10px auto 10px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error {
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: #D8000C;
+    background-color: #FFBABA;
+    text-align: center;
+    align-items: center;
+}

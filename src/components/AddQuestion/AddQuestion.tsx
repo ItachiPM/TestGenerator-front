@@ -2,11 +2,11 @@ import React, {FormEvent, useContext, useEffect, useState} from "react";
 import {Title} from "../utils/Title/Title";
 import {BackButton} from "../utils/BackButton/BackButton";
 import {ModuleContext} from "../utils/context/module.context";
+import {apiUrl} from "../../config/api";
 import {fetchFunction} from "../utils/fetchFunction";
 import {Question} from "types";
 
 import './AddQuestion.css'
-import {apiUrl} from "../../config/api";
 
 interface ResponseValue {
     success: string | null;
@@ -52,8 +52,7 @@ export const AddQuestion = () => {
         e.preventDefault()
 
         try {
-            const res = await fetch(`${apiUrl
-            }/questions/add`, {
+            const res = await fetch(`${apiUrl}/questions/add`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
@@ -124,13 +123,13 @@ export const AddQuestion = () => {
             <div className="section">
                 <label>
                     <p>Pytanie:</p>
-                    <input type="text" name="question"
+                    <textarea name="question"
                            onChange={e => changeNewQuestion(e.target.name, e.target.value)}/>
                 </label>
 
                 <label>
                     <p>Poprawna odpowiedź:</p>
-                    <input type="text" name="correctAnswer"
+                    <textarea name="correctAnswer"
                            onChange={e => changeNewQuestion(e.target.name, e.target.value)}/>
                 </label>
 
@@ -141,19 +140,19 @@ export const AddQuestion = () => {
 
                 <label>
                     <p>Zła odpowieź <small>(opcjonalnie)</small>:</p>
-                    <input type="text" name="badAnswer1"
+                    <textarea name="badAnswer1"
                            onChange={e => changeNewQuestion(e.target.name, e.target.value)}/>
                 </label>
 
                 <label>
                     <p>Zła odpowieź <small>(opcjonalnie)</small>:</p>
-                    <input type="text" name="badAnswer2"
+                    <textarea name="badAnswer2"
                            onChange={e => changeNewQuestion(e.target.name, e.target.value)}/>
                 </label>
 
                 <label>
                     <p>Zła odpowieź <small>(opcjonalnie)</small>:</p>
-                    <input type="text" name="badAnswer3"
+                    <textarea name="badAnswer3"
                            onChange={e => changeNewQuestion(e.target.name, e.target.value)}/>
                 </label>
             </div>

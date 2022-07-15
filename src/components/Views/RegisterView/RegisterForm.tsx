@@ -27,7 +27,7 @@ export const RegisterForm = (props: Props) => {
         }
 
         try {
-            const res = await fetch(`${apiUrl}/login/register`, {
+            const res = await fetch(`${apiUrl}/users/register`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

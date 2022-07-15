@@ -1,0 +1,16 @@
+.SearchContent input {
+    background-color: #efefef;
+    border: 1px solid #dedede;
+    padding: 5px;
+    color: #757575;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+
+.SearchContent button {
+    background-color: #efefef;
+    border: 1px solid #dedede;
+    padding: 5px;
+    color: #757575;
+    border-radius: 5px;
+}

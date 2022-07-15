@@ -15,6 +15,8 @@ import {ModuleTest} from "../ModuleTest/ModuleTest";
 import {LoginView} from "../Views/LoginView/LoginView";
 import {AuthProvider} from "../utils/login/AuthProvider";
 import {ProtectedRoute} from "../utils/login/ProtectedRoute";
+import {AdminView} from "../Views/AdminView/AdminView";
+import {AdminPanelEditQuestionPreview} from "../AdminPanelPreview/AdminPanelEditQuestionPreview/AdminPanelEditQuestionPreview";
 import {ModuleContext} from '../utils/context/module.context';
 import {Module} from 'types';
 
@@ -41,6 +43,9 @@ export const App = () => {
                     <Route path="login/register" element={<RegisterView/>}/>
 
                     <Route path="/" element={<ProtectedRoute><MainView/></ProtectedRoute>}/>
+                    <Route path="/admin" element={<ProtectedRoute><AdminView/></ProtectedRoute>}/>
+                    <Route path="/admin/editquestion/:id" element={<ProtectedRoute><AdminPanelEditQuestionPreview/></ProtectedRoute>}/>
+
 
                     <Route path="generator" element={<ProtectedRoute><GeneratorView/></ProtectedRoute>}/>
                     <Route path="generator/general" element={<ProtectedRoute><GeneralTest/></ProtectedRoute>}/>
