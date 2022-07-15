@@ -1,8 +1,8 @@
 import React from "react";
+import {TestAnswer} from "../TestAnswer/TestAnswer";
 import {Answer} from "types";
 
 import './SingleQuestionToTest.css'
-import {TestAnswer} from "../TestAnswer/TestAnswer";
 
 interface Props {
     result: number[]

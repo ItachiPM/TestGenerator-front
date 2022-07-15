@@ -1,8 +1,8 @@
 import React, {useContext, useState} from "react";
-
-import './ModuleTestSettings.css'
 import {ModuleContext} from "../utils/context/module.context";
 import {Link} from "react-router-dom";
+
+import './ModuleTestSettings.css'
 
 interface TestParameter {
     module: string;

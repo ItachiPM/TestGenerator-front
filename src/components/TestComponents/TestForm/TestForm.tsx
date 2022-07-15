@@ -5,7 +5,6 @@ import {TestQuestionsResponse} from "types";
 
 import './TestForm.css'
 
-
 interface Props {
     questions: TestQuestionsResponse[];
 }
