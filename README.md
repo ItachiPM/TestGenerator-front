@@ -1,5 +1,6 @@
 # Test Generator API Frontend
 This project was create to help people to study. It is also good to make a simple quiz for fun.
+this app is used in https://mpapi.networkmanager.pl
 
 ## General Information
 This project was create to help study to exam in school but it is also good to did simple quiz and have fun with friends.
