@@ -30,6 +30,32 @@ https://github.com/ItachiPM/TestGenerator-back
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##Views
+
+- Login
+  ![tekst alternatywny](images/login.PNG)
+- Register
+  ![tekst alternatywny](images/register.PNG)
+- Menu
+  ![tekst alternatywny](images/menu.PNG)
+- Generate test
+  ![tekst alternatywny](images/generateTest.PNG)
+- Test setting
+  ![tekst alternatywny](images/test_settings.PNG)
+- Test view
+  ![tekst alternatywny](images/test-view.PNG)
+- Test result
+  ![tekst alternatywny](images/test-end.PNG)
+- Question preview for study
+  ![tekst alternatywny](images/question-preview.PNG)
+- Add question
+  ![tekst alternatywny](images/add-question.PNG)
+- Admin panel
+  ![tekst alternatywny](images/admin-panel.PNG)
+- Edit question
+  ![tekst alternatywny](images/edit-question.PNG)
+
+
 ## Acknowledgements
 This project was created on base knowledge gained on MegaK course.
 
